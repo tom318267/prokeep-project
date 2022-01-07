@@ -75,8 +75,8 @@ const Login = () => {
           </h2>
         </div>
 
-        <div className="mt-8 sm:mx-auto login-form sm:w-full sm:max-w-md">
-          <div className="bg-white py-8 px-4 login-form shadow sm:rounded-lg sm:px-10">
+        <div className="mt-8 login-form w-4/5 mx-auto">
+          <div className="bg-white py-8 px-4 login-form shadow rounded-md sm:px-10">
             <form onSubmit={submitForm} className="space-y-6 font-mont">
               <div>
                 <label
