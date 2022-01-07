@@ -25,7 +25,7 @@ const Login = () => {
   const { APIURI, invalidEmail, invalidPassword, loginFailed, loginSuccess } =
     constants;
 
-  const messagehandler = (messageStatus, messageData) => {
+  const messageHandler = (messageStatus, messageData) => {
     setLoader(false);
     setStatus(messageStatus);
     setMessage(messageData);
@@ -43,11 +43,11 @@ const Login = () => {
       // Email validation
 
       if (!LoginMethod().isEmailValid(trimEmail)) {
-        return messagehandler(true, invalidEmail);
+        return messageHandler(true, invalidEmail);
       }
 
       if (!LoginMethod().isPasswordValid(password)) {
-        return messagehandler(true, invalidPassword);
+        return messageHandler(true, invalidPassword);
       }
 
       const data = {
@@ -58,10 +58,10 @@ const Login = () => {
       const loginUser = await axios.post(APIURI, data);
 
       if (loginUser.status === 200) {
-        return messagehandler(false, loginSuccess);
+        return messageHandler(false, loginSuccess);
       }
     } catch (error) {
-      return messagehandler(true, loginFailed);
+      return messageHandler(true, loginFailed);
     }
   };
 
