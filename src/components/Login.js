@@ -29,6 +29,7 @@ const Login = () => {
     setLoader(false);
     setStatus(messageStatus);
     setMessage(messageData);
+    console.log(loader);
   };
 
   const submitForm = async (e) => {
