@@ -71,7 +71,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="h-screen flex flex-col justify-center sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h1 className="font-teko text-7xl text-center title">Prokeep</h1>
           <h2 className="mt-2 text-center font-mont text-xl font-normal text-white">
