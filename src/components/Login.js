@@ -134,9 +134,7 @@ const Login = () => {
                 </h4>
 
                 <button
-                  type="submit"
                   name="submit"
-                  onClick={(e) => submitForm(e)}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md text-md font-semibold text-white bg-blue-500"
                 >
                   Sign in
