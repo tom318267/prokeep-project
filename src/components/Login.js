@@ -50,6 +50,10 @@ const Login = () => {
         return messageHandler(true, invalidPassword);
       }
 
+      if (!LoginMethod().areFormFieldsValid(trimEmail, password)) {
+        return messageHandler(true, "Fields required");
+      }
+
       const data = {
         email: trimEmail,
         password,
